@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+        <div class="container">
+            <h2>Password Generator</h2>
+            <!-- Input Wrapper -->
+            <div class="wrapper">
+                <div class="input_box">
+                    <input type="text" value = "" placeholder="click of generate password" disabled>
+                    <span><i class="fa-regular fa-clipboard"></i></span>
+                    <!-- <span><i class="fa-solid fa-check"></i></span> -->
+                </div>
+
+                <!-- Password slider -->
+                <div class="password_indicator" id="medium"></div>
+                <!-- password length-->
+                <div class="pass_length">
+                    <div class="details">
+                        <label class="title">Password length</label>
+                        <span id="length"></span>
+                    </div>
+                    <input type="range" min="1" value="1" max="30" step="1">
+                <!-- password type -->
+                </div>
+                <div class="pass_setting">
+                    <label class="title">Password Setting</label>
+                    <ul class="options">
+                        <li class="option">
+                            <input type="checkbox" id="lowercase" checked>
+                            <label for="lowercase">Lowercase (a-z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="uppercase">
+                            <label for="uppercase">Uppercase (A-Z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="number">
+                            <label for="number">Numbers (0-9)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="symbol">
+                            <label for="symbol">Symbols (!-$^+)</label>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- Button -->
+                <button class="generate-btn">Generate Password</button>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/06306327e7.js" crossorigin="anonymous"></script>
+</body>
+</html>
